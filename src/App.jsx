@@ -1,35 +1,13 @@
 import Content from "./components/Content";
+import NavBar from "./components/NavBar";
+import Account from "./pages/Account";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <div className="navbar">
-        <nav>
-          <ul>
-            <li>
-              <a href="#" className="option">
-                Account
-              </a>
-            </li>
-            <li>
-              <a href="#" className="option">
-                Wallet
-              </a>
-            </li>
-            <li>
-              <a href="#" className="option">
-                Find Match
-              </a>
-            </li>
-            <li>
-              <a href="#" className="option">
-                Watch Game
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <NavBar />
       <div className="container">
         <video className="video-background" autoPlay loop muted>
           <source
@@ -38,7 +16,10 @@ function App() {
           />
           Your browser does not support the video tag.
         </video>
-          <Content />
+        <Routes>
+          <Route path="/" element={<Content />} />
+          <Route path="account" element={<Account />} />
+        </Routes>
       </div>
     </>
   );

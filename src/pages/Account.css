@@ -1,0 +1,146 @@
+label {
+    padding-right: 10px;
+    font-size: 1.5rem;
+  }
+
+h1 {
+    color: white;
+    font-size: 100px;
+    
+}
+
+.name {
+    font-size: 35px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-user-info {
+    display: flex;
+    color: white;
+    height: auto;
+    height: 55%;
+    width: 50%;
+    border-radius: 10%;
+}
+
+.user-info {
+    backdrop-filter: blur(10px);
+    border: 5px solid white ;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    background-color: rgba(3, 253, 170, 0.189);
+    border-radius: 10%;
+    padding: 15px;
+    width: 500px;
+    gap: 10px;
+}
+
+.user-info p {
+    font-size: 20px;
+}
+
+.user-info img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+.user-info-stats {
+    backdrop-filter: blur(10px);
+    border: 5px solid white ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    background-color: rgba(3, 253, 170, 0.189);
+    border-radius: 10%;
+    padding: 15px;
+    width: 600px;
+    height: 490px;
+    gap: 10px;
+}
+
+.main-button-account {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    cursor: pointer;
+  }
+  
+  .main-button-account span {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .main-button-account:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(3, 253, 170);
+    transition: all .35s;
+  }
+  
+  .main-button-account:hover {
+    color: black;  }
+  
+  .main-button-account:hover:after {
+    width: 100%;
+  }
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.social-media p {
+    margin: 0;
+}
+
+
+.social-media-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-link img {
+    width: 40px;
+    height: 40px;
+  }

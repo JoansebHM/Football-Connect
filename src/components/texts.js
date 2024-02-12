@@ -9,7 +9,7 @@ const texts = {
 
     },
     section3: {
-      title: "What We Want...",
+      title: "What Do We Want?",
       text: `We want to revolutionize 
       the world of football, thinking from an objective point
       of view where everyone is old to show their skills. For this 
